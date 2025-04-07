@@ -658,7 +658,7 @@ nav ul li a.active:after {
 }
 
 .apply-button:hover {
-    background-color: #3498db
+    background-color: #2980b9;
 }
 
 /* Contact Section */
@@ -709,14 +709,14 @@ nav ul li a.active:after {
 
 .contact-form input:focus, 
 .contact-form textarea:focus {
-    border-color: #ff9f1c;
+    border-color: #3498db;
     outline: none;
     box-shadow: 0 0 10px rgba(255, 159, 28, 0.5);
 }
 
 /* Button Styles */
 .contact-form button {
-    background-color: #ff9f1c;
+    background-color: #3498db;
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -728,7 +728,7 @@ nav ul li a.active:after {
 }
 
 .contact-form button:hover {
-    background-color: #e68900;
+    background-color: #2980b9;
     transform: scale(1.05); /* Button animation */
 }
 
