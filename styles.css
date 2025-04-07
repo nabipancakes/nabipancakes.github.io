@@ -612,6 +612,7 @@ nav ul li a.active:after {
     color: #666;
 }
 
+
 /* Positions Section */
 #positions {
     max-width: 900px;
@@ -637,6 +638,27 @@ nav ul li a.active:after {
 
 .position p {
     color: #666;
+}
+
+
+/* Apply Buttons */
+.apply-buttons {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.apply-button {
+    padding: 15px 25px;
+    background-color: #f39c12;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin: 0 15px;
+}
+
+.apply-button:hover {
+    background-color: #e67e22;
 }
 
 /* Contact Section */
