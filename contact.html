@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Diaries - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you! Whether you have questions or want to get involved, feel free to reach out.</p>
+    </header>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> <a href="mailto:info.thebookdiaries@gmail.com">info.thebookdiaries@gmail.com</a></p>
+
+        <h2>Get in Touch</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 The Book Diaries. All rights reserved.</p>
+    </footer>
+</body>
+</html>
