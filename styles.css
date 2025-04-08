@@ -262,7 +262,7 @@ nav ul li a.active:after {
     margin-bottom: 20px;
 }
 
-/* Existing CSS for Events Section (No changes) */
+/* Events Section */
 .events-preview {
     background-color: #f9f9f9;
     padding: 80px 20px;
@@ -278,62 +278,65 @@ nav ul li a.active:after {
     font-size: 2.5rem;
     margin-bottom: 50px;
     color: #1a1a1a;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .events-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    justify-content: center;
+    justify-items: center;
+    padding: 0 20px;
 }
 
 .event-card {
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     padding: 30px 25px;
-    max-width: 600px; 
     width: 100%;
     text-align: left;
     display: flex;
-    gap: 30px; 
-    align-items: flex-start;
-    transition: transform 0.2s ease;
+    flex-direction: column;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
 
 .event-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
 }
 
 .event-date {
     background-color: #3498db;
     color: #fff;
-    border-radius: 8px;
-    padding: 12px 14px;
+    border-radius: 50%;
+    padding: 20px;
     text-align: center;
-    min-width: 60px;
+    width: 80px;
+    height: 80px;
     font-weight: bold;
-}
-
-.event-date .month {
-    display: block;
-    font-size: 1rem;
-}
-
-.event-date .day {
-    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
 }
 
 .event-info h3 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
+    font-size: 1.4rem;
     color: #1a1a1a;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .event-info p {
     font-size: 0.95rem;
     color: #555;
     margin-bottom: 10px;
+    line-height: 1.5;
 }
 
 .btn-text {
@@ -367,42 +370,40 @@ nav ul li a.active:after {
     background-color: #ccc;
 }
 
-.event-image img {
-    width: 300px; 
-    height: 350px; 
-    object-fit: cover;
-    border-radius: 8px;
-}
-
+/* Featured Events */
 .featured-events .event-featured {
     display: flex;
-    flex-direction: column; 
-    gap: 50px; 
+    flex-direction: column;
+    gap: 50px;
 }
 
 .event-item {
-    display: flex; 
-    align-items: center; 
-    gap: 30px; 
+    display: flex;
+    align-items: center;
+    gap: 30px;
     background-color: #fff;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .event-image {
-    flex: 1; 
+    flex: 1;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .event-image img {
     width: 100%;
-    max-width: 300px; 
-    height: auto; 
-    border-radius: 8px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .event-details {
-    flex: 2; 
+    flex: 2;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -411,31 +412,49 @@ nav ul li a.active:after {
 .event-details h3 {
     font-size: 1.5rem;
     color: #1a1a1a;
+    font-weight: 600;
 }
 
 .event-meta {
     font-size: 1rem;
     color: #555;
+    display: flex;
+    gap: 15px;
 }
 
 .event-buttons a {
     margin-top: 10px;
     padding: 10px 20px;
     text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
 }
 
 .event-buttons a.btn.primary {
     background-color: #3498db;
     color: #fff;
+    transition: background 0.3s ease;
 }
 
 .event-buttons a.btn.secondary {
     background-color: #e0e0e0;
     color: #1a1a1a;
+    transition: background 0.3s ease;
+}
+
+.event-buttons a:hover {
+    background-color: #1a6ec8;
 }
 
 .event-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+/* Event Section Padding */
+.featured-events,
+.upcoming-events {
+    padding: 80px 20px;
 }
 
 
