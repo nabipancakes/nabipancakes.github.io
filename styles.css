@@ -911,14 +911,59 @@ footer {
     .mobile-menu {
         display: block;
     }
+
+    .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f4f4f4; /* light background, optional */
+        text-align: center;
+        padding: 0 20px; /* for small screen spacing */
+    }
+    
+    .hero .container {
+        max-width: 900px;
+        width: 100%;
+    }
     
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: #1a1a1a;
     }
     
-    .hero {
-        padding: 80px 0;
+    .hero-content p {
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+        color: #333;
+        line-height: 1.6;
     }
+    
+    .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: background 0.3s ease;
+    }
+    
+    .btn.primary {
+        background-color: #3498db;
+        color: #fff;
+    }
+    
+    .btn.secondary {
+        background-color: #eee;
+        color: #1a1a1a;
+    }
+    
 }
 
 @media (max-width: 576px) {
