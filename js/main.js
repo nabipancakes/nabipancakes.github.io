@@ -1,5 +1,13 @@
-// main.js
-// Get the modal elements
+// Mobile menu toggle functionality
+const mobileMenuIcon = document.querySelector('.mobile-menu');
+const navMenu = document.querySelector('nav ul');
+
+// Toggle mobile menu visibility
+mobileMenuIcon.addEventListener('click', function () {
+    navMenu.classList.toggle('active');  // Toggle 'active' class to show/hide menu
+});
+
+// Get the modal elements for lightbox (already in your current code)
 const modal = document.getElementById('lightbox-modal');
 const modalImg = document.getElementById('lightbox-img');
 
