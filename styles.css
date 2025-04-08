@@ -642,6 +642,7 @@ nav ul li a.active:after {
 .impact-intro {
     padding: 60px 0;
     text-align: center;
+    background-color: #f8f9fa;
 }
 
 .impact-intro .content {
@@ -649,53 +650,84 @@ nav ul li a.active:after {
     margin: 0 auto;
 }
 
-.impact-areas {
+.impact-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.impact-intro p {
+    font-size: 1.125rem;
+    color: #555;
+}
+
+/* Impact Stats Section */
+.impact-stats-large {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.impact-stats-large h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.stat-card {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 1.125rem;
+    color: #555;
+}
+
+/* Impact Stories Section */
+.impact-stories {
     padding: 80px 0;
     background-color: #f8f9fa;
 }
 
-.impact-areas h2 {
+.impact-stories h2 {
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
     margin-bottom: 40px;
 }
 
-.area-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.area-card {
+.story-card {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #fff;
+    margin-bottom: 40px;
     border-radius: 8px;
-    overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-
-.area-image {
-    height: 200px;
     overflow: hidden;
-}
-
-.area-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.area-content {
-    padding: 25px;
-}
-
-.area-content h3 {
-    margin-bottom: 15px;
 }
 
 .story-photos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* previously full-width images */
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 10px;
-    margin-bottom: 20px;
+    width: 40%;
+    padding: 20px;
 }
 
 .story-photos img {
@@ -705,66 +737,75 @@ nav ul li a.active:after {
     border-radius: 6px;
 }
 
-.testimonials {
-    padding: 80px 0;
+.story-content {
+    padding: 20px;
+    width: 60%;
 }
 
-.testimonials h2 {
-    text-align: center;
-    margin-bottom: 40px;
+.story-content h3 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+.story-content p {
+    font-size: 1.125rem;
+    color: #555;
+    margin-bottom: 15px;
 }
 
-.testimonial-card {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    padding: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-
-.testimonial-content {
-    position: relative;
-    padding: 20px 0;
-}
-
-.testimonial-content:before {
-    content: '\201C';
-    font-family: Georgia, serif;
-    font-size: 4rem;
-    position: absolute;
-    left: -20px;
-    top: -20px;
-    color: #3498db;
-    opacity: 0.3;
-}
-
-.testimonial-author {
+.story-stats {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     margin-top: 20px;
 }
 
-.testimonial-author img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 15px;
+.mini-stat {
+    text-align: center;
 }
 
-.author-info h4 {
-    margin-bottom: 0;
+.mini-stat span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3498db;
+}
+
+.mini-stat p {
     font-size: 1rem;
+    color: #555;
 }
 
-.author-info p {
-    margin-bottom: 0;
-    font-size: 0.9rem;
-    color: #666;
+/* Mobile Styles for Impact Page */
+@media (max-width: 768px) {
+    .impact-intro h1 {
+        font-size: 2rem;
+    }
+
+    .impact-intro p {
+        font-size: 1rem;
+    }
+
+    .impact-stats-large h2, .impact-stories h2 {
+        font-size: 2rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .story-card {
+        flex-direction: column;
+    }
+
+    .story-photos {
+        width: 100%;
+        padding: 0;
+    }
+
+    .story-content {
+        width: 100%;
+        padding: 15px;
+    }
 }
 
 
