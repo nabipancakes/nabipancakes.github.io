@@ -516,9 +516,9 @@ nav ul li a.active:after {
 }
 
 .story-image img {
-    width: 80%;
+    width: 70%;
     border-radius: 8px;
-    max-width: 400px;
+    max-width: 300px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -586,7 +586,7 @@ nav ul li a.active:after {
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 30px;
+    gap: 50px; 
     justify-content: center;
 }
 
@@ -599,7 +599,7 @@ nav ul li a.active:after {
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto 300px;
+    margin: 0 auto 30px; 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -610,15 +610,15 @@ nav ul li a.active:after {
 }
 
 .team-member {
-    margin: 200px; 
+    margin: 20px; 
     text-align: center;
-    display: inline-block; 
+    display: inline-block;
     vertical-align: top;
 }
 
 .team-member h4 {
     font-size: 1.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 15px; 
 }
 
 .team-member p {
@@ -731,7 +731,7 @@ nav ul li a.active:after {
 }
 
 .story-photos {
-    width: 30%; /* Reduced from 40% */
+    width: 60%; 
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); 
@@ -746,10 +746,10 @@ nav ul li a.active:after {
 }
 
 .story-content {
-    width: 70%; 
-    padding: 20px;
+    width: 100%; 
+    padding: 10px;
 }
-}
+
 
 .story-content h3 {
     font-size: 1.875rem;
