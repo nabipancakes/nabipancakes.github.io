@@ -235,40 +235,111 @@ nav ul li a.active:after {
     margin-bottom: 20px;
 }
 
-/* Events */
-.event-featured {
+/* Events Section */
+.events-preview {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+}
+
+.events-preview .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.events-preview h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #1a1a1a;
+}
+
+.events-grid {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.event-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 30px 25px;
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+    display: flex;
     gap: 20px;
     align-items: flex-start;
-  }
-  
-  .event-image img {
-    width: 100%;
-    max-width: 300px; /* Resized image */
-    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-date {
+    background-color: #3498db;
+    color: #fff;
     border-radius: 8px;
-  }
-  
-  .event-details {
-    flex: 1;
-  }
-  
-  .event-buttons {
-    margin-top: 15px;
-  }
-  
-  .event-buttons .btn {
-    margin-right: 10px;
-    padding: 10px 16px;
-    font-size: 14px;
-  }
-  
-  .featured-events h2 {
+    padding: 12px 14px;
     text-align: center;
-    margin-bottom: 30px;
-  }
+    min-width: 60px;
+    font-weight: bold;
+}
+
+.event-date .month {
+    display: block;
+    font-size: 1rem;
+}
+
+.event-date .day {
+    font-size: 1.5rem;
+}
+
+.event-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.event-info p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.btn-text {
+    display: inline-block;
+    color: #3498db;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.btn-text:hover {
+    color: #1a6ec8;
+}
+
+.events-more {
+    margin-top: 40px;
+}
+
+.events-more .btn.secondary {
+    background-color: #e0e0e0;
+    color: #1a1a1a;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.events-more .btn.secondary:hover {
+    background-color: #ccc;
+}
+
   
   
 /* Get Involved */
