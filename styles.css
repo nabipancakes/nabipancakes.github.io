@@ -598,7 +598,7 @@ nav ul li a.active:after {
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto 15px;
+    margin: 0 auto 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -609,7 +609,7 @@ nav ul li a.active:after {
 }
 
 .team-member {
-    margin: 800px; 
+    margin: 200px; 
     text-align: center;
     display: inline-block; 
     vertical-align: top;
@@ -617,7 +617,7 @@ nav ul li a.active:after {
 
 .team-member h4 {
     font-size: 1.2rem;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
 }
 
 .team-member p {
