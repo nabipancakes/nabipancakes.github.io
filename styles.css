@@ -180,8 +180,9 @@ nav ul li a.active:after {
 .page-header p {
     font-size: 1.1rem;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 30px; 
 }
+
 
 /* Impact Stats */
 .impact-stats {
@@ -338,6 +339,13 @@ nav ul li a.active:after {
 
 .events-more .btn.secondary:hover {
     background-color: #ccc;
+}
+
+.event-image img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
   
