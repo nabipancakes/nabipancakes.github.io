@@ -235,7 +235,6 @@ nav ul li a.active:after {
     font-size: 1.1rem;
     margin-bottom: 20px;
 }
-
 /* Events Section */
 .events-preview {
     background-color: #f9f9f9;
@@ -266,11 +265,11 @@ nav ul li a.active:after {
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     padding: 30px 25px;
-    max-width: 400px;
+    max-width: 600px; 
     width: 100%;
     text-align: left;
     display: flex;
-    gap: 20px;
+    gap: 30px; 
     align-items: flex-start;
     transition: transform 0.2s ease;
 }
@@ -342,11 +341,12 @@ nav ul li a.active:after {
 }
 
 .event-image img {
-    width: 160px;
-    height: 200px; 
+    width: 300px; 
+    height: 350px; 
     object-fit: cover;
     border-radius: 8px;
 }
+
 
   
   
