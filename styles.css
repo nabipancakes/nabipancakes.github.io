@@ -506,7 +506,7 @@ nav ul li a.active:after {
 
 .our-story .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 40px;
     align-items: center;
 }
@@ -516,8 +516,9 @@ nav ul li a.active:after {
 }
 
 .story-image img {
-    width: 100%;
+    width: 80%;
     border-radius: 8px;
+    max-width: 400px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -598,7 +599,7 @@ nav ul li a.active:after {
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto 100px;
+    margin: 0 auto 300px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
