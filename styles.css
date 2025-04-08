@@ -723,11 +723,11 @@ nav ul li a.active:after {
 }
 
 .story-photos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: 10px;
-    width: 40%;
+    width: 30%; /* Reduced from 40% */
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); 
+    gap: 10px;
 }
 
 .story-photos img {
@@ -738,8 +738,9 @@ nav ul li a.active:after {
 }
 
 .story-content {
+    width: 70%; 
     padding: 20px;
-    width: 60%;
+}
 }
 
 .story-content h3 {
