@@ -245,78 +245,42 @@ nav ul li a.active:after {
     margin-bottom: 20px;
 }
 
-/* Events Preview */
-.events-preview {
-    padding: 80px 0;
-}
-
-.events-preview h2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.events-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-bottom: 40px;
-}
-
-.event-card {
+/* Events */
+.event-featured {
     display: flex;
-    background-color: #fff;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .event-image img {
+    width: 100%;
+    max-width: 300px; /* Resized image */
+    height: auto;
     border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-}
-
-.event-card:hover {
-    transform: translateY(-5px);
-}
-
-.event-date {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #3498db;
-    color: #fff;
-    padding: 15px;
-    min-width: 80px;
-}
-
-.event-date .month {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.event-date .day {
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-
-.event-info {
-    padding: 20px;
-    flex-grow: 1;
-}
-
-.event-info h3 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-}
-
-.event-info p {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-    color: #666;
-}
-
-.events-more {
+  }
+  
+  .event-details {
+    flex: 1;
+  }
+  
+  .event-buttons {
+    margin-top: 15px;
+  }
+  
+  .event-buttons .btn {
+    margin-right: 10px;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  
+  .featured-events h2 {
     text-align: center;
-}
-
+    margin-bottom: 30px;
+  }
+  
+  
 /* Get Involved */
 .get-involved {
     padding: 80px 0;
