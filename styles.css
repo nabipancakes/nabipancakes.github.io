@@ -264,7 +264,7 @@ nav ul li a.active:after {
 .image-container {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 5px;
 }
 
 .image-container img {
