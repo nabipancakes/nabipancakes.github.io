@@ -263,16 +263,20 @@ nav ul li a.active:after {
 }
 .image-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;  
+    align-items: center;
     gap: 60px;
+    margin: 0 auto;            
+    max-width: 100%;           
 }
 
 .image-container img {
-    width: 60%; 
-    height: auto; 
-    border-radius: 8px; 
+    width: 60%;               
+    height: auto;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 
 
