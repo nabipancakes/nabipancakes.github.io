@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved | The Book Diaries</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="The Book Diaries logo" />
+                <a href="index.html">The Book Diaries</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="impact.html">Impact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="get-involved.html" class="active">Get Involved</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Get Involved</h1>
+            <p>Volunteer, start a drive, or partner with us. Join the movement to get books to every reader.</p>
+        </div>
+    </section>
+
+    <section class="get-involved">
+        <div class="container">
+            <div class="ways-grid">
+                <div class="way-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Donate Books</h3>
+                    <p>Share gently used books. We’ll place them with readers who need them most.</p>
+                    <a href="https://forms.gle/nnCLM1ppKKycT59a7" target="_blank" class="btn primary">Donate</a>
+                </div>
+                <div class="way-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Volunteer</h3>
+                    <p>Help sort, pack, and run events. Earn service hours while making an impact.</p>
+                    <a href="#signup" class="btn secondary">Sign Up</a>
+                </div>
+                <div class="way-card">
+                    <i class="fas fa-people-carry"></i>
+                    <h3>Start a Drive</h3>
+                    <p>Lead a book drive at your school or organization with our starter kit.</p>
+                    <a href="#signup" class="btn secondary">Request Kit</a>
+                </div>
+                <div class="way-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Partner With Us</h3>
+                    <p>We collaborate with nonprofits, schools, and clubs to expand access to books.</p>
+                    <a href="#signup" class="btn secondary">Partner</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Styled sign-up form (inspired by GirlUp’s clarity) -->
+    <section id="signup" style="padding:60px 0; background:#f7f8fa;">
+        <div class="container" style="max-width:900px;">
+            <h2 style="text-align:center;margin-bottom:24px;">Sign Up to Get Involved</h2>
+            <form action="https://formsubmit.co/info.thebookdiaries@gmail.com" method="POST" class="contact-form" style="background:#fff;padding:24px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.06);">
+                <input type="hidden" name="_next" value="https://thebookdiaries.me/thank_you.html" />
+                <input type="hidden" name="_captcha" value="false" />
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+                    <div>
+                        <label for="first">First Name</label>
+                        <input type="text" id="first" name="First Name" required>
+                    </div>
+                    <div>
+                        <label for="last">Last Name</label>
+                        <input type="text" id="last" name="Last Name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="Email" required>
+                    </div>
+                    <div>
+                        <label for="role">I’m Interested In</label>
+                        <select id="role" name="Interest" required>
+                            <option value="Volunteer">Volunteering</option>
+                            <option value="Start a Drive">Starting a Drive</option>
+                            <option value="Partner">Partnership</option>
+                            <option value="Donate">Donating</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="margin-top:10px;">
+                    <label for="message">Tell us more</label>
+                    <textarea id="message" name="Message" rows="5" placeholder="Share any details or questions..."></textarea>
+                </div>
+                <div style="text-align:center;margin-top:8px;">
+                    <button type="submit" class="btn primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>The Book Diaries</h3>
+                    <p>Expanding the reading community & beyond.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="impact.html">Impact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="mailto:info.thebookdiaries@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/thebookdiariesorg" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@thebookdiariesorg" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Book Diaries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
