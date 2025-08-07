@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 <body>
      <!-- Navigation -->
@@ -38,14 +39,18 @@
      <section class="page-header">
         <div class="container">
 
-            <p>We would love to hear from you! Whether you have questions or want to get involved, feel free to reach out.</p>
+            <p class="reveal">We would love to hear from you! Whether you have questions or want to get involved, feel free to reach out.</p>
         </div>
     </section>
 
     <section id="contact">
         <p><strong>Email:</strong> <a href="mailto:info.thebookdiaries@gmail.com" class="contact-email">info.thebookdiaries@gmail.com</a></p>
 
-        <form action="submit_form.php" method="POST" class="contact-form">
+        <!-- GitHub Pages does not support PHP. Use mailto fallback and JS-powered EmailJS optional integration. -->
+        <form id="contact-form" class="contact-form" action="https://formsubmit.co/info.thebookdiaries@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="https://thebookdiaries.me/thank_you.html" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_subject" value="New Website Contact" />
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" required>
         
@@ -57,7 +62,7 @@
         
             <button type="submit">Send Message</button>
         </form>
-        </form>
+        <p style="text-align:center;margin-top:10px;">Prefer email? <a href="mailto:info.thebookdiaries@gmail.com?subject=Inquiry%20from%20The%20Book%20Diaries%20Website">info.thebookdiaries@gmail.com</a></p>
     </section>
 
 
@@ -95,6 +100,16 @@
             </div>
         </div>
     </footer>
-
+    <script src="js/main.js"></script>
+    <script>
+      // Basic in-page validation and success UX
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          // Let Formspree handle submission; we just provide a success state UX
+          contactForm.insertAdjacentHTML('beforeend', '<div class="success-message" style="text-align:center;color:#2f855a;margin-top:10px;">Sending…</div>');
+        });
+      }
+    </script>
 </body>
 </html>
