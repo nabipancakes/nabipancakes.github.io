@@ -828,7 +828,8 @@ nav ul li a.active:after {
 }
 
 .contact-form input, 
-.contact-form textarea {
+.contact-form textarea, 
+select.ui-select {
     padding: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
@@ -839,10 +840,11 @@ nav ul li a.active:after {
 }
 
 .contact-form input:focus, 
-.contact-form textarea:focus {
-    border-color: #3498db;
+.contact-form textarea:focus,
+select.ui-select:focus {
+    border-color: var(--brand-primary);
     outline: none;
-    box-shadow: 0 0 10px rgba(255, 159, 28, 0.5);
+    box-shadow: 0 0 10px rgba(47, 109, 93, 0.3);
 }
 
 /* Button Styles */
